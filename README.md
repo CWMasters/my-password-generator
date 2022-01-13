@@ -13,4 +13,4 @@ file:///Users/chrismasters/Desktop/projects/password-generator/develop/index.htm
 
 ## Contribution
 * HTML & CSS starter code included with Module challenge.
-*JavaScript written by Chris Masters.
+* JavaScript written by Chris Masters.
