@@ -5,28 +5,28 @@ var generateBtn = document.querySelector("#generate");
 
 var generatePassword = function(promptLength, promptCase, promptNumeric, promptCharacter){
      
-    // Variable passString - empty string declaration for future password string characters
+    // empty string declaration for future password string characters
     var passString = "";
-    // Variable password - empty string declaration for password and local function scope
+    // empty string declaration for password and local function scope
     var password = "";
 
    if (promptCase == "lowercase"){
-       // passString gets assigned lowercase letters if "lowercase" was selected
+       // assigned lowercase letters if "lowercase" was selected
        passString = "abcdefghijklmnopqrstuvwxyz";
    } else if (promptCase == "uppercase"){
-       // passString gets assigned lowercase letters if "uppercase" was selected
+       // assigned lowercase letters if "uppercase" was selected
        passString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    } else {
-       // passString gets assigned both cases if "both" was selected
+       // assigned both cases if "both" was selected
        passString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYz";
    }
 
-   // passString gets numbers concatenated to itself if "yes" was selected for Numerics
+   // numbers assigned to itself if "yes" was selected for Numerics
    if (promptNumeric == "yes"){
        passString += "0123456789";
    }
 
-   // passString gets special characters concatenated to itself if "yes" was selected for characters
+   // special characters assigned to itself if "yes" was selected for characters
    if (promptCharacter == "yes"){
        passString += '!@#$%^&*()';
    }
@@ -35,16 +35,11 @@ var generatePassword = function(promptLength, promptCase, promptNumeric, promptC
    for (var i = 0; i < promptLength; i++) {
        // Using Math.floor and Math.random to randomize character number
        var ranNum = Math.floor(Math.random() * passString.length);
-       // Concatentate password together using ranNum
+       // password using ranNum
        password += passString.substring(ranNum, ranNum +1);
    }
-
-   // console.log(passString + ' ' + 'password: ' + password);
-
    return password;
 };
-
-
 
 // password length function
 var passLength = function () {
@@ -96,7 +91,6 @@ var passCharacter = function () {
             passCharacter();
         }
     };
-
 
 // Write password to the #password input
 function writePassword() {
