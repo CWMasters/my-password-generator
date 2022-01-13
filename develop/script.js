@@ -58,6 +58,7 @@ var passLength = function () {
         }
     };
 
+// password case function (lower,upper,both)    
 var passCase = function () {
     var promptCase = window.prompt('Would you like to use lowercase, uppercase or both? Enter "lowercase", "uppercase" or "both" to choose!');
     promptCase = promptCase.toLowerCase();
@@ -70,6 +71,7 @@ var passCase = function () {
         }
     };
 
+// password Numeric data function (use numbers or no?)
 var passNumeric = function () {
     var promptNumeric = window.prompt('Would you like to use Numerics? Enter "yes" or "no" to choose!');
     promptNumeric = promptNumeric.toLowerCase();
@@ -82,6 +84,7 @@ var passNumeric = function () {
         }
     };
 
+// password special character function
 var passCharacter = function () {
     var promptCharacter = window.prompt('Would you like to use special characters? Enter "yes" or "no" to choose!');
     promptCharacter = promptCharacter.toLowerCase();
