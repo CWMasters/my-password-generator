@@ -9,7 +9,7 @@ To create a random secure password, consisting of 8 to 128 characters with users
 * JavaScript
 
 ## Website URL
-file:///Users/chrismasters/Desktop/projects/password-generator/develop/index.html
+https://cwmasters.github.io/my-password-generator/
 
 ## Screenshot
 ![Screen Shot 2022-01-13 at 4 24 37 PM (2)](https://user-images.githubusercontent.com/95546410/149426745-af7c3a05-abf9-42f3-b947-02c24361c933.png)
